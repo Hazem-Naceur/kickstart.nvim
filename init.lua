@@ -188,7 +188,7 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
 -- Set half-page jumps to keep curson in mid-screen
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
-vim.keymap.set('n', '<C-d>', '<C-u>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
 -- Yank And Paste from registers
 vim.keymap.set('n', '<leader>p', '"0p', { noremap = true })
