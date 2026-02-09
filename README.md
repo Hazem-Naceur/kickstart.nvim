@@ -76,6 +76,15 @@ too - it's ignored in the kickstart repo to make maintenance easier, but it's
 ```sh
 git clone https://github.com/Hazem-Naceur/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
+Step 2: Copy your config
+```sh
+sudo mkdir -p /root/.config
+sudo cp -r ~/.config/nvim /root/.config/nvim
+```
+Step 3: Fix ownership
+```sh
+sudo chown -R root:root /root/.config/nvim
+```
 
 </details>
 
@@ -238,4 +247,5 @@ sudo dnf install -y gcc make git ripgrep fd-find unzip neovim
 sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
+
 
